@@ -4,9 +4,24 @@ const path = require('path');
 const app = express();
 const port = process.env.PORT || 8080;
 
+app.get('/', (req, res) => {
+  res.send(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>Back Express</title>
+    </head>
+    <body>
+      <h1>Bienvenue sur mon serveur Express</h1>
+    </body>
+    </html>
+  `);
+});
+
 // Exemple d'endpoint API
 app.get('/api/hello', (req, res) => {
-  res.json({ message: 'Hello from the back-end!' });
+  res.json({ message: 'Hello, je fonctionne correctement !' });
 });
 
 // Endpoint de health check

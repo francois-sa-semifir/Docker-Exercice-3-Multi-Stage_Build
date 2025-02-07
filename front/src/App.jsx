@@ -12,8 +12,8 @@ function App() {
 
   return (
     <div>
-      <h1>My React Front-end (19.x)</h1>
-      <p>Message from back-end: {message}</p>
+      <h1>Bienvenue sur mon serveur React</h1>
+      <p>Message depuis le back-end: {message}</p>
     </div>
   );
 }
